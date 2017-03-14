@@ -1,0 +1,29 @@
+#include <iostream>  
+using namespace std;  
+int main() {      
+/* Este programa tem como objetivo informar ao usuario (principalmente freelancer),     
+quanto precisa cobrar por hora ou por dia de trabalho para atingir seu objetivo de salario mensal*/      
+
+cout << "Informe quanto deseja lucrar mensalmente." << endl;     
+int salario_mes = 0;     
+cin >> salario_mes;      
+
+cout << "Informe quantas horas por dia esta disposto a trabalhar." << endl;     
+int horas_dia = 0;     
+cin >> horas_dia;   
+
+cout << "Informe quantos dias por semana esta disposto a trabalhar." << endl;   
+int dias_semana = 0;   
+cin >> dias_semana;    
+
+//Considerando um mês como 30 dias.    
+int salario_dia = salario_mes/(dias_semana*4.3);//4.3 tenta se aproximar ao numero de semanas em um mês.     
+int salario_hora = salario_mes/(dias_semana*horas_dia*4.3);      
+
+/* Informa os numeros arredondados para o usuario*/
+cout << "Seu salario por dia deve ser de: R$" << salario_dia << "/dia" << endl;     c
+out << " " << endl;     
+cout << "Seu salario por hora deve ser de: R$" << salario_hora << "/hora" << endl;      
+
+return 0; 
+}
