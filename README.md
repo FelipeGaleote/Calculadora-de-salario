@@ -1,2 +1,1 @@
-# Salary-per-day-calculator
-A programam made in C++ that receive some user inputs about user pretensions and output how much the user salary /day or /hour must be.
+Programa desenvolvido em C++ que recebe pretensões salariais e retorna quanto deve ser o salario do usuário por dia ou por hora..
